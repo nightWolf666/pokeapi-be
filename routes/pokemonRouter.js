@@ -7,3 +7,4 @@ export const pokemonRouter = Router();
 // pokemonRouter.route('/').get(getAllPokemons, getManyPokemonsDetails, sendPokemonsFE);
 pokemonRouter.route('/').get(getAllPokemonsFromFile, sendPokemonsFE);
 
+

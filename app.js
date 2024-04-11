@@ -1,5 +1,6 @@
 import express from 'express';
 import { pokemonRouter }  from './routes/pokemonRouter.js'
+import { highscoreRouter }  from './routes/highscoreRouter.js'
 import { errorHandler }  from './middleware/errorHandler.js'
 import * as path from 'path';
 import cors from 'cors';
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 app.use("/pokemon", pokemonRouter);
+app.use("/highscore", highscoreRouter);
 
 
 app.use(errorHandler);

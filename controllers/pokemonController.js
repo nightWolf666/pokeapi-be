@@ -3,6 +3,8 @@ import {getAllPokemonsList} from '../services/apiFunctions.js';
 import * as path from 'path';
 import fs from 'node:fs/promises';
 
+import { pool } from '../db.js';
+
 export async function getAllPokemonsFromFile (req, res, next) {
 
   try {
