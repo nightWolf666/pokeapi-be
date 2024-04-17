@@ -21,4 +21,3 @@ export const getSinglePokemon = async (url) => {
     return false;
   }
 };
-
