@@ -3,6 +3,7 @@ import { pool } from '../db.js';
 
 export async function insertNewHighScore(req, res) {
   const { player, score } = req.body;
+  console.log(req.body)
   try {
       const { rows: highscore } = await pool.query(
           'INSERT INTO highscore (player, score) VALUES ($1, $2) RETURNING *',

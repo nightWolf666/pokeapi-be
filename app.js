@@ -6,7 +6,7 @@ import * as path from 'path';
 import cors from 'cors';
 
 const app = express();
-app.use(cors());
+app.use(cors({origin:'*'}));
 app.use(express.static('.'));
 app.use('/images', express.static('images'));
 

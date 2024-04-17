@@ -10,7 +10,7 @@ export async function getAllPokemonsFromFile (req, res, next) {
   try {
 
     const data = await fs.readFile('./pokemon.json', { encoding: 'utf8' });
-    // console.log("data",data);
+     console.log("dataoutput",data);
     req.allPokemonsCompleteList = JSON.parse(data);
 
     next();
